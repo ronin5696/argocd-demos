@@ -4,7 +4,7 @@ metadata:
   name: online-shop
   namespace: shop
 spec:
-  replicas: 20
+  replicas: 3
   selector:
     matchLabels:
       app: online-shop
@@ -23,5 +23,5 @@ spec:
             memory: "128Mi"
             cpu: "100m"
           limits:
-            memory: "384Mi"
-            cpu: "1000m"
+            memory: "256Mi"
+            cpu: "500m"
